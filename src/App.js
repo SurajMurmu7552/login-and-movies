@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Register from './components/Register';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="layer"></div>
+      <div className="trial-page">
+        <div className="header-container">
+          <div className="header-title">
+            <h2>Learn to code by watching others</h2>
+          </div>
+          <div className="header-content">
+            <p>See how experience developers solve problems in real-time. </p>
+            <p>Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+          </div>
+        </div>
+        <div className="register-container">
+          <p className="register-trial"><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+          <Register />
+        </div>
+      </div>
     </div>
   );
 }
