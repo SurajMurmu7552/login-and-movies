@@ -6,16 +6,24 @@
 .card {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 .card-item {
   margin: 0 auto;
   margin-top: 34px;
-  width: 82%;
+  width: 80%;
   height: 46px;
   border: 1px solid #333;
   border-radius: 4px;
+}
+
+.card-item input {
+  width: 90%;
+  height: 90%;
+  border: none;
   outline: none;
 }
+
 .submit {
   background: rgba(8, 168, 16, 0.8);
   padding: 10px 0;
@@ -41,7 +49,45 @@
   color: red;
 }
 
+.card-err {
+  font-size: 8px;
+  display: block;
+  padding-top: 4px;
+  text-align: right;
+  visibility: hidden;
+}
+
+.icon img {
+  transform: translateY(10px);
+  visibility: hidden;
+}
+
 .error {
-  color: rgb(255, 0, 0);
-  border: 2px solid rgb(255, 0, 0);
+  border: 1px solid rgb(255, 0, 0);
+}
+.error ::placeholder {
+  visibility: hidden;
+}
+.error input[type="email"] ::placeholder {
+  visibility: visible;
+  color: red;
+}
+.error .icon img {
+  visibility: visible;
+}
+.error .card-err {
+  visibility: visible;
+}
+
+@media screen and (max-width: 800px) {
+  .card-item {
+    margin-top: 20px;
+    height: 42px;
+  }
+  .card-item input {
+    width: 80%;
+  }
+  .terms {
+    padding-bottom: 10px;
+  }
 }
