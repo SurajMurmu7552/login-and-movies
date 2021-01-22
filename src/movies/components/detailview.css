@@ -1,0 +1,21 @@
+.view-container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.poster {
+  height: 400px;
+  width: 280px;
+  flex: 1;
+}
+.poster img {
+  width: 80%;
+}
+.about {
+  flex: 2;
+}
+.cast {
+  list-style: none;
+  display: flex;
+}

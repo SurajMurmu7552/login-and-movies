@@ -1,26 +1,23 @@
+import {BrowserRouter as Router , Route, Link ,Switch} from 'react-router-dom'
 import './App.css';
-import Register from './components/Register';
+import Login from './login/Login';
+import Movies from './movies/Movies';
+
 
 function App() {
   return (
-    <div className="App">
-      <div className="layer"></div>
-      <div className="trial-page">
-        <div className="header-container">
-          <div className="header-title">
-            <h2>Learn to code by watching others</h2>
-          </div>
-          <div className="header-content">
-            <p>See how experience developers solve problems in real-time. </p>
-            <p>Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
-          </div>
-        </div>
-        <div className="register-container">
-          <p className="register-trial"><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
-          <Register />
-        </div>
-      </div>
-    </div>
+    <Router>
+      
+
+      <Switch>
+        <Route path="/login">
+          <Login />
+        </Route>
+        <Route path="/movies">
+          <Movies />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
