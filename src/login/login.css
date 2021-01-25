@@ -3,7 +3,7 @@
   text-align: center;
   height: 100%;
   width: 100%;
-  background-image: url("http://localhost:3000/asset/bg-intro-desktop.png");
+  background-image: url("https://nostalgic-mayer-061648.netlify.app/asset/bg-intro-desktop.png");
 }
 .layer {
   position: absolute;
@@ -53,7 +53,7 @@
   .login {
     position: relative;
     height: 1000px;
-    background-image: url("http://localhost:3000/asset/bg-intro-mobile.png");
+    background-image: url("https://nostalgic-mayer-061648.netlify.app/asset/bg-intro-mobile.png");
   }
   .trial-page {
     flex-direction: column;
