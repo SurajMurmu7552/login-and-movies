@@ -22,7 +22,7 @@ export default function Dashboard({list , movieList ,handleClick}) {
                     
                                                 if (arr === ele){
                                                             
-                                                    return <a href="./movies/detailview" className="movie-item" id={movie.id} key={movie.id} onClick={handleClick} ><img src={movie.backdrop} alt=""/></a>
+                                                    return <a href="/movies/detailview" className="movie-item" id={movie.id} key={movie.id} onClick={handleClick} ><img src={movie.backdrop} alt=""/></a>
                                                         
                                                     
                                                 }
