@@ -39,6 +39,7 @@ export default function DetailView({movieList}) {
                         </div>
 
                     )
+                    return null;
             })}
         </>           
 

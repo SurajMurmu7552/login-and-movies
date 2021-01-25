@@ -10,6 +10,7 @@ export default function Dashboard({list , movieList ,handleClick}) {
         <div className="dashboard-container">
             <div className="genre">
                 {
+
                     list.map( ele =>
                         (
                             <div key= {ele} >
@@ -25,6 +26,7 @@ export default function Dashboard({list , movieList ,handleClick}) {
                                                         
                                                     
                                                 }
+                                                return null;
                                             })
                                         ))
                                     }

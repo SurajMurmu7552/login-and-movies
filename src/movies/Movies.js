@@ -37,10 +37,12 @@ export default function Movies() {
         genres.map(element => {
             element.map(tag =>{
                 tags.push(tag)
+                return null;
             })
+            return null;
         })
 
-        const unique = [... new Set(tags)];
+        const unique = [...new Set(tags)];
         return unique;
     }
 
