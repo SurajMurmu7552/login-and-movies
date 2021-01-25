@@ -58,16 +58,26 @@ export default function Movies() {
         <Router >
             <div className="container">
                 <Nav />
-                <div className="links">
-                    <Link to="/movies/dashboard">  Dashboard  </Link>
-                    <Link to="/movies/detailview">  DetailView  </Link>
-                </div>
             
                 <Switch>
+                    <Route exact path="/movies">
+                    <div className="links">
+                        <Link to="/movies/dashboard">  Dashboard  </Link>
+                        <Link to="/movies/detailview">  DetailView  </Link>
+                    </div>
+                    </Route>
                     <Route path='/movies/dashboard'>
+                    <div className="links">
+                        <Link to="/movies">  Movies  </Link>
+                        <Link to="/movies/detailview">  DetailView  </Link>
+                    </div>
                         <Dashboard list={getGenre()} movieList={movies} handleClick={handleClick}/>
                     </Route>
                     <Route path='/movies/detailview'>
+                    <div className="links">
+                        <Link to="/movies">  Movies  </Link>
+                        <Link to="/movies/dashboard">  Dashboard  </Link>
+                    </div>
                         <DetailView id={movieid} movieList={movies}/>
                     </Route>
                 </Switch>
