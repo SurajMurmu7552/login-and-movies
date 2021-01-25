@@ -5,9 +5,9 @@ export default function DetailView({movieList}) {
 
     const id = localStorage.getItem("mid");
 
-    const handleBookmark =() =>{
-        localStorage.setItem("bookmark", [id])
-    }
+    // const handleBookmark =() =>{
+    //     localStorage.setItem("bookmark", [id])
+    // }
 
     return (
         <>
@@ -31,9 +31,9 @@ export default function DetailView({movieList}) {
                                 <div className="desc">
                                     <p><strong>Movie Description</strong> : {movie.overview}</p>
                                 </div>
-                                <div className="bookmark">
+                                {/* <div className="bookmark">
                                     <span><a href="" onClick={handleBookmark}>bookmark</a></span>
-                                </div>
+                                </div> */}
 
                             </div>
                         </div>

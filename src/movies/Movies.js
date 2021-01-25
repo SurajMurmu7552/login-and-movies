@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Route,BrowserRouter as Router, Switch , Link} from 'react-router-dom';
-import Bookmark from './components/Bookmark';
 import Dashboard from './components/Dashboard';
 import DetailView from './components/DetailView';
 import Nav from './components/Nav';

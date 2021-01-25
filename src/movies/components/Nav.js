@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link,BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 import './nav.css'
 
 export default function Nav() {
